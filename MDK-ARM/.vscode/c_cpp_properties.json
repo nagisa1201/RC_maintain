@@ -3,17 +3,17 @@
         {
             "name": "RC",
             "includePath": [
-                "f:\\project\\git\\RC\\Core\\Inc",
-                "f:\\project\\git\\RC\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
-                "f:\\project\\git\\RC\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
-                "f:\\project\\git\\RC\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
-                "f:\\project\\git\\RC\\Drivers\\CMSIS\\Include",
-                "f:\\project\\git\\RC\\MDK-ARM\\Hardware",
+                "f:\\project\\git\\RC_maintain\\Core\\Inc",
+                "f:\\project\\git\\RC_maintain\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
+                "f:\\project\\git\\RC_maintain\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
+                "f:\\project\\git\\RC_maintain\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
+                "f:\\project\\git\\RC_maintain\\Drivers\\CMSIS\\Include",
+                "f:\\project\\git\\RC_maintain\\MDK-ARM\\Hardware",
                 "F:\\tools\\keil\\ARM\\ARMCLANG\\include",
                 "F:\\tools\\keil\\ARM\\ARMCLANG\\include\\libcxx",
-                "f:\\project\\git\\RC\\MDK-ARM",
-                "f:\\project\\git\\RC\\Core\\Src",
-                "f:\\project\\git\\RC\\Drivers\\STM32F4xx_HAL_Driver\\Src"
+                "f:\\project\\git\\RC_maintain\\MDK-ARM",
+                "f:\\project\\git\\RC_maintain\\Core\\Src",
+                "f:\\project\\git\\RC_maintain\\Drivers\\STM32F4xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

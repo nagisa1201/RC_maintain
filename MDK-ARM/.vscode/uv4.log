@@ -1,0 +1,13 @@
+*** Using Compiler 'V6.7', folder: 'F:\tools\keil\ARM\ARMCLANG\Bin'
+Build target 'RC'
+compiling motor.cpp...
+../Core/Src/maincpp.cpp(29): warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        Serial_Printf("%d\n",motor._rev_raw);
+                      ^
+1 warning generated.
+compiling maincpp.cpp...
+linking...
+Program Size: Code=21984 RO-data=1044 RW-data=12 ZI-data=17844  
+FromELF: creating hex file...
+"RC\RC.axf" - 0 Error(s), 1 Warning(s).
+Build Time Elapsed:  00:00:06
