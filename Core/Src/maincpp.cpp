@@ -1,8 +1,8 @@
 /*
  * @Author: Elaina
  * @Date: 2024-09-08 14:26:13
- * @LastEditors: chaffer-cold 1463967532@qq.com
- * @LastEditTime: 2024-09-11 15:44:44
+ * @LastEditors: Nagisa 2964793117@qq.com
+ * @LastEditTime: 2024-10-29 21:56:05
  * @FilePath: \MDK-ARMg:\project\stm32\f427iih6\RC\Core\Src\maincpp.cpp
  * @Description:
  *
@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "string.h"
-uint8_t common_buffer[8] = {0};
+uint8_t common_buffer[8] = {0};//数据缓冲区清零
 // Motor::MotorInterface_t motor;
 Motor::Motor_t motor;
 void can_filter_init(CAN_HandleTypeDef *_hcan);
