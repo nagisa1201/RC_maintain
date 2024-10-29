@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "rc\startup_stm32f427xx.o"
 "rc\maincpp.o"
 "rc\main.o"
