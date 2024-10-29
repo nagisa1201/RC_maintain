@@ -2,7 +2,7 @@
  * @Author: Elaina
  * @Date: 2024-09-08 14:56:31
  * @LastEditors: Nagisa 2964793117@qq.com
- * @LastEditTime: 2024-10-29 19:29:09
+ * @LastEditTime: 2024-10-29 23:55:06
  * @FilePath: \MDK-ARM\Hardware\motor.cpp
  * @Description:
  *
@@ -51,24 +51,30 @@ void MotorInterface_t::ControlOutput(int16_t control)
         HAL_CAN_AddTxMessage(_hcan, &Can_Tx, _common_buffer, &TxMailbox);
     }
 }
-/**
- * @brief: 电机底层的更新函数，此处用不到为空
- * @return {*}
- * @note:
- */
+
 void MotorInterface_t::update()
 {
 }
+/**
+ * @brief 
+ * 电机类的构造函数，初始化电机的pid控制器
+ * @param pid_config 
+ */
 void Motor_t::set_target(float target)
 {
-    _target = target * rev_fator * forward;
+    _target = target * rev_fator * forward;//将目标值转化为原始数据
     pid.target_update(_target);
 }
 
+/**
+ * @brief: 电机底层的更新函数，
+ * @return {*}
+ * @note:
+ */
 void Motor_t::ControlUpdate()
 {
     update();
     // int16_t error = (_target + _rev_raw);
-    int16_t control = pid.update(_rev_raw);
+    int16_t control = pid.update(_rev_raw);//输入控制目标量转速
     ControlOutput(control);
 }

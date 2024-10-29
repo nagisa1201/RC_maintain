@@ -55,10 +55,10 @@ namespace Motor
         float rev_fator = 33;       // 转速系数 从原始数据转化到真实数据的倒数
         float angle_fator = 22.475; // 角度系数从真实数据到原始数据
     private:
-        uint8_t *_common_buffer;
-        uint8_t _id;
-        CAN_HandleTypeDef *_hcan;
-        bool HaveTxPermission = false;
+        uint8_t *_common_buffer;//数据缓冲区，用于存储数据
+        uint8_t _id;//电调id
+        CAN_HandleTypeDef *_hcan;//can总线
+        bool HaveTxPermission = false;//是否有发送权限
     };
 
     class Motor_t : public MotorInterface_t
@@ -78,7 +78,7 @@ namespace Motor
             这种语法用于直接初始化聚合类型（如结构体、数组、类等）
             传入大括号的参数时参数列表 {5, 2, 0, -5000, 5000, 2000} 视为一个聚合类型（如结构体）中的各个成员的初始化值。
         */
-        pid_base_template_t<int, float> pid = pid_base_template_t<int, float>({5, 2, 0, -5000, 5000, 2000});
+        pid_base_template_t<int, float> pid = pid_base_template_t<int, float>({5, 2, 0, -5000, 5000, 2000});//实例化并调用父类构造函数
     };
 }
 #endif

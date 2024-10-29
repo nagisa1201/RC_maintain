@@ -3,62 +3,85 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 1, 11, LIC=PE7DL-019J2-QDRKD-8NK9J-G39TZ-2VMWA
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: tian Lenovo, 123, LIC=FYKYW-QTD08-30LNC-7PA2R-C6LJK-87QB5
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
-Toolchain Path:  E:\tools2\KEIL\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.19
-Assembler:       Armasm.exe V6.19
-Linker/Locator:  ArmLink.exe V6.19
-Library Manager: ArmAr.exe V6.19
-Hex Converter:   FromElf.exe V6.19
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      Segger\JL2CM3.dll V2.99.42.0
-Dialog DLL:      TCM.DLL V1.56.4.0
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  F:\tools\keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.7
+Assembler:       Armasm.exe V6.7
+Linker/Locator:  ArmLink.exe V6.7
+Library Manager: ArmAr.exe V6.7
+Hex Converter:   FromElf.exe V6.7
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-e:\project\git\RC_maintain\MDK-ARM\RC.uvprojx
+F:\project\git\RC_maintain\MDK-ARM\RC.uvprojx
 Project File Date:  10/29/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.19', folder: 'E:\tools2\KEIL\ARM\ARMCLANG\Bin'
-Build target 'RC'
-compiling motor.cpp...
+*** Using Compiler 'V6.7', folder: 'F:\tools\keil\ARM\ARMCLANG\Bin'
+Rebuild target 'RC'
+assembling startup_stm32f427xx.s...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
 ../Core/Src/maincpp.cpp(29): warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
         Serial_Printf("%d\n",motor._rev_raw);
                       ^
 1 warning generated.
 compiling maincpp.cpp...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling system_stm32f4xx.c...
+compiling motor.cpp...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
 linking...
-Program Size: Code=20536 RO-data=1044 RW-data=12 ZI-data=17844  
+Program Size: Code=21984 RO-data=1044 RW-data=12 ZI-data=17844  
 FromELF: creating hex file...
 "RC\RC.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
-                CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.6.0
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
 
 Package Vendor: Keil
-                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
-                Keil.STM32F4xx_DFP.3.0.0
-                STMicroelectronics STM32F4 Series Device Support
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.5.0.pack
+                Keil.STM32F4xx_DFP.2.5.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  ./RTE/_RC
-  E:/tools2/keilpackage/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  .\RTE\_RC
+  F:\tools\keil\ARM\CMSIS\5.0.1\CMSIS\Include
+  F:\tools\keil\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
-      Include file:  CMSIS/Core/Include/tz_context.h
+   * Component: ARM::CMSIS:CORE:5.0.1
 Build Time Elapsed:  00:00:03
 </pre>
 </body>
